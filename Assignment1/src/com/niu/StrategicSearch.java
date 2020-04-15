@@ -7,8 +7,8 @@ public class StrategicSearch implements Search{
     @Override
     public void runSearch(Integer[][] grid) {
         int cellsSearched = 0;
-        List<Element> carrier = new ArrayList<Element>();
-        List<Element> submarine = new ArrayList<Element>();
+        List<Element> carrier = new ArrayList<Element>(); // creates ArrayList carrier of Element type
+        List<Element> submarine = new ArrayList<Element>(); // creates an ArrayList submarine of Element type
         int gridRows = grid.length;
         int gridColumns = 0;
         if (gridRows > 0){
@@ -133,8 +133,8 @@ public class StrategicSearch implements Search{
 
         }
 
-        Collections.sort(carrier);
-        Collections.sort(submarine);
+        Collections.sort(carrier); //sorts the elements of carrier
+        Collections.sort(submarine); // sorts the elements of submarine
 
         System.out.println(this.Name());
         System.out.println("Number of cells searched "+(cellsSearched-1));

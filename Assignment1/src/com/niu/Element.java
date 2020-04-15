@@ -11,19 +11,19 @@ public class Element implements Comparable {
 
     public int getIndexColumn() {
         return indexColumn;
-    }
+    } // returns the indexColumn
 
     public int getIndexRow() {
         return indexRow;
-    }
+    } // returns the indexRow
 
     @Override
     public String toString() {
-        return "("+indexRow+","+indexColumn+")";
+        return "("+indexRow+","+indexColumn+")"; // for example, indexRow=0 and indexColumn=1 , then it returns (0,1)
     }
 
     @Override
-    public boolean equals(Object obj) {
+    public boolean equals(Object obj) { //checks if two objects are equal
         if (this == obj) {
             return true;
         }
@@ -36,8 +36,8 @@ public class Element implements Comparable {
     }
 
     @Override
-    public int compareTo(Object obj) {
-        Element el = (Element) obj;
+    public int compareTo(Object obj) { //overrides the compareTo method in comparable interface
+        Element el = (Element) obj;   // use case: Collections.sort(List<Element>) helps to sort based on this method.
         if (this.indexRow == el.indexRow){
             return this.indexColumn - el.indexColumn;
         }

@@ -37,6 +37,7 @@ public class BattleshipSearch {
     }
 
 
+    //Creates a Grid
     private static Integer[][] Grid(int rows, int columns) {
         Integer[][] grid = new Integer[rows][columns];
 

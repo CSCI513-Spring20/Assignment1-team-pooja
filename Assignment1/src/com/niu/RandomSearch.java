@@ -15,8 +15,8 @@ public class RandomSearch implements Search{
         if (gridRows > 0){
             gridColumns = grid[0].length;
         }
-        List<Element> carrier = new ArrayList<Element>();
-        List<Element> submarine = new ArrayList<Element>();
+        List<Element> carrier = new ArrayList<Element>(); // creates ArrayList carrier of Element type
+        List<Element> submarine = new ArrayList<Element>(); // creates an ArrayList submarine of Element type
         boolean[][] visited = new boolean[gridRows][gridColumns];
 
         // create instance of Random class
@@ -57,8 +57,8 @@ public class RandomSearch implements Search{
 
             cellsSearched++;
         }
-        Collections.sort(carrier);
-        Collections.sort(submarine);
+        Collections.sort(carrier); // sorts the elements of carrier
+        Collections.sort(submarine); //sorts the elements of submarine
 
         System.out.println(this.Name());
         System.out.println("Number of cells searched "+cellsSearched);

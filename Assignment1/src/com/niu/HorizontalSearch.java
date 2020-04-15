@@ -13,8 +13,8 @@ public class HorizontalSearch implements Search {
         if (gridRows > 0){
             gridColumns = grid[0].length;
         }
-        List<Element> carrier = new ArrayList<Element>();
-        List<Element> submarine = new ArrayList<Element>();
+        List<Element> carrier = new ArrayList<Element>(); // creates ArrayList carrier of Element type
+        List<Element> submarine = new ArrayList<Element>(); // creates an ArrayList submarine of Element type
 
 
         for (int row=0; row < gridRows; row++){
